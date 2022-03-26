@@ -4,21 +4,26 @@
     </head>
     <body>
         <div>
-            <h1><a href="/">ГЛАВНАЯ СТРАНИЦА НЕ МОЕГО САЙТА</a></h1>
+            <h1><a href="/">ВОЗВРАТИ МЕНЯ ОБРАТНО</a></h1>
+
         </div>
-        {% for post in posteki %}
+
             <div>
+
                 <h2>
-                    <a href="post/{{ post.id }}">
+                    <a href="/post/{{ post.id }}">
                         {{ post.title }}
                     </a>
                 </h2>
                 <p>
-                    {{ post.text }}
+
                 </p>
+                <h1>
+                    КОМЕНТАРИИ
+
+                </h1>
+                {% endfor %}
             </div>
 
- 
-        {% endfor %}
     </body>
 </html>
